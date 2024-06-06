@@ -1,0 +1,4 @@
+name: SwizTable
+version: '${version}'
+main: dev.mega.swiztable.SwizTable
+api-version: '1.17'
