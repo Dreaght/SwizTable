@@ -1,5 +1,6 @@
 package dev.mega.swiztable.user;
 
+import dev.mega.swiztable.block.STBlock;
 import dev.mega.swiztable.item.STItem;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,8 +14,9 @@ import java.util.UUID;
 public class User {
     private final UUID uuid;
     private final List<STItem> items;
+    private final List<STBlock> blocks;
 
     public static User of(UUID uuid) {
-        return new User(uuid, List.of());
+        return new User(uuid, List.of(), List.of());
     }
 }

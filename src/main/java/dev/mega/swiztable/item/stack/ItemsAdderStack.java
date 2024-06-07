@@ -3,6 +3,7 @@ package dev.mega.swiztable.item.stack;
 import dev.lone.itemsadder.api.CustomStack;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import org.bukkit.inventory.ItemStack;
 
 import java.util.Objects;
 
@@ -10,6 +11,11 @@ import java.util.Objects;
 @AllArgsConstructor
 public class ItemsAdderStack implements PluginStack {
     private final CustomStack itemStack;
+
+    @Override
+    public ItemStack getItemStack() {
+        return itemStack.getItemStack();
+    }
 
     @Override
     public boolean equals(Object o) {

@@ -22,8 +22,13 @@ repositories {
 
 dependencies {
     compileOnly "io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT"
+
     implementation "dev.mega:megacore:1.2-beta"
+
     compileOnly 'com.github.LoneDev6:API-ItemsAdder:3.6.1'
+
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
 }
 
 def targetJavaVersion = 17
